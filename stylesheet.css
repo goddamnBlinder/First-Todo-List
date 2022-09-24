@@ -62,4 +62,14 @@ input, button{
 #new-task-input::placeholder{
     color:gray;
 }
-#new-task-submit
+#new-task-submit{
+    color:  var(--pink);
+     font-size: 1.25rem;
+     font-weight: 700;
+     background-image: linear-gradient(to right, var(--pink), var(--purple), var(--silk));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     cursor: pointer;
+     transition: 0.5s;
+
+}
