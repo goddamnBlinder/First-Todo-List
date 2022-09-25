@@ -59,9 +59,11 @@ window.addEventListener("load", () => {
 
 task_actions_edit.addEventListener("click", () => {
     task_input_element.removeAttribute("readonly");
-    
-})
 
+})
+task_actions_delete.addEventListener("click", () => {
+    task_input_element.classList.remove("input")
+})
 
     });
 });
