@@ -40,18 +40,27 @@ window.addEventListener("load", () => {
 
 
  const task_actions_element = document.createElement("div");
- task_actions_element.classList("action");
+ task_actions_element.classList.add("action");
+ 
+  const task_actions_delete = document.createElement("button");
+  task_actions_delete.classList.add("delete");
+  task_actions_delete.textContent = "Delete";
+ 
+ const task_actions_edit = document.createElement("button");
+ task_actions_edit.classList.add("edit");
+ task_actions_edit.textContent = "Edit";
 
- const task_actions_delete = document.createElement("div");
- task_actions_delete.classList("delete");
 
- const task_actions_edit = document.createElement("div");
- task_actions_edit.classList("edit");
-
+ task_actions_element.appendChild(task_actions_edit);
  task_actions_element.appendChild(task_actions_delete);
- task_actions_element.appendChild()
+
+ task_element.appendChild(task_actions_element);
 
 
+task_actions_edit.addEventListener("click", () => {
+    task_input_element.removeAttribute("readonly");
+    
+})
 
 
     });
