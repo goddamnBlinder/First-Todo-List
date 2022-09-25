@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Todo List </h1>
-        <form id="new-task-form">
+        <form id="new-task-form" autocomplete="off">
             <input
                 type="text" id= "new-task-input" placeholder="So, what are we doing Today?🙃">
             <input type="submit" id="new-task-submit" value="Add task"/>    
@@ -18,19 +18,29 @@
     </header>
 <main>
 
-    <section class="task-list">
+    <!-- <section class="task-list">
       <h2>Tasks</h2>
 
 
       <div id="tasks">
+
+
       <div class="task">
-        <input type="text" class= "text" value="My shiny task" readonly/>
+             <div class="content">
+        <input
+             type="text" 
+              class= "text" 
+              value="My shiny task" 
+              readonly/>
+             </div>
         <div class="action">
             <button class="edit">Edit</button>
             <button class="delete">Delete</button>
-        </div>
-      </div>
-      </div>
+               </div>
+           </div>
+           
+</div> -->
+      
     </section>
 
 </main>
