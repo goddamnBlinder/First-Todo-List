@@ -61,8 +61,10 @@ task_actions_edit.addEventListener("click", () => {
     task_input_element.removeAttribute("readonly");
 
 })
-task_actions_delete.addEventListener("click", () => {
-    task_input_element.classList.remove("input")
+task_actions_delete.addEventListener("click", (e) => {
+    // task_element.removeChild(task_content_element);
+    let target = e.target
+    console.log(target);
 })
 
     });
