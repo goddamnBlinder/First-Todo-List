@@ -3,12 +3,13 @@ window.addEventListener("load", () => {
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector("#new-task-input");
     const list_element = document.querySelector("#tasks");
+    const no_task = document.querySelector(".no-task");
     
     
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        
+        no_task.style.display = "none";
         const task = input.value;
         
         if (!task) {
@@ -72,15 +73,23 @@ task_actions_edit.addEventListener("click", () => {
 task_actions_delete.addEventListener("click", (e) => {
   let target = e.target
    let parent = target.parentElement.parentElement;
-   console.log(parent);
+  //  console.log(parent);
 
-   task_actions_element.removeChild(task_actions_delete);
-   task_element.removeChild(task_actions_element);
-   list_element.removeChild(task_element);
-
+  //  task_actions_element.removeChild(task_actions_delete);
+  //  task_element.removeChild(task_actions_element);
+  //  list_element.removeChild(task_element);
+   list_element.removeChild(parent);
+  noTaskChecker();
 
 })
-   
-    });
+    })
+    function noTaskChecker(){
+      if (list_element.children.length === 1) {
+        no_task.style.display = "block";
+      }
+
+      // console.log(list_element.children.length)
+    }
 });
 
+//in thy local storage i take refuge oh Lord.

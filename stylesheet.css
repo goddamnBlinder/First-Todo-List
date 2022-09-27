@@ -107,6 +107,16 @@ main{
     color: var(--gray);
     margin-bottom: 1rem;
 }
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    /* align-items: center; */
+
+}
+
+
 #tasks .task{
     display: flex;
     flex-direction:row;
@@ -166,4 +176,17 @@ main{
  
  .task .action .delete{
     color: var(--pure);
+ }
+
+ .no-task{
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--darkest);
+    border-radius: 21px;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+
  }
